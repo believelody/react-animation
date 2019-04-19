@@ -1,0 +1,9 @@
+.menu-list {
+    max-width: 700px !important;
+    min-width: 300px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid slategrey;
+}
