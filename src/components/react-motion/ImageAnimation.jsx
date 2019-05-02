@@ -21,7 +21,7 @@ const Image = styled.div.attrs({
     box-sizing: border-box;
 `
 
-const ImageAnimation = ({ image, startingX, startingY, startingWidth, startingHeight, endingX, endingY, endingWidth, endingHeight, back = false }) => {
+const ImageAnimation = ({ image, startingX, startingY, startingWidth, startingHeight, endingX, endingY, endingWidth, endingHeight, back = false, radius = false }) => {
     const [visibility, setVisibility] = useState('visible')
 
     const defaultStyle = {
@@ -29,7 +29,7 @@ const ImageAnimation = ({ image, startingX, startingY, startingWidth, startingHe
         y: startingY,
         width: startingWidth,
         height: startingHeight,
-        borderRadius: !back ? 50 : 0
+        borderRadius: !back && radius ? 50 : 0
     }
 
     const style = {
@@ -37,7 +37,7 @@ const ImageAnimation = ({ image, startingX, startingY, startingWidth, startingHe
         y: spring(endingY),
         width: spring(endingWidth),
         height: spring(endingHeight),
-        borderRadius: back ? spring(50) : spring(0)
+        borderRadius: back && radius ? spring(50) : spring(0)
     }
 
     return (
