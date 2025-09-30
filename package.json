@@ -11,7 +11,7 @@
     "@reach/router": "^1.2.1",
     "@svgr/cli": "^4.2.0",
     "animejs": "^3.0.1",
-    "lodash-es": "^4.17.11",
+    "lodash-es": "^4.17.21",
     "lorem-ipsum": "^2.0.1",
     "mauerwerk": "^2.0.2",
     "popmotion": "^8.6.8",
